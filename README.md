@@ -1,10 +1,13 @@
-# Modern Login Page
+# Modern Login Page with Node.js Backend
 
-A clean and modern login page with sign-up functionality. This project features a responsive design with smooth animations and a professional look.
+A clean and modern login page with sign-up functionality, now with a Node.js + Express backend for authentication and a protected Tableau Public embed page.
 
 ## Features
 
 - Modern and clean UI design
+- Node.js + Express backend
+- Simple session-based authentication
+- Protected Tableau Public dashboard page
 - Responsive layout
 - Form validation
 - Smooth animations
@@ -19,9 +22,30 @@ A clean and modern login page with sign-up functionality. This project features 
 
 ## Getting Started
 
-1. Clone the repository
-2. Open `index.html` in your web browser
-3. Start customizing the code to fit your needs
+### 1. Install dependencies
+```
+npm install
+```
+
+### 2. Start the server
+```
+npm start
+```
+
+### 3. Open in your browser
+Go to [http://localhost:3000](http://localhost:3000)
+
+- Login with one of the hardcoded users (see `server.js`)
+- After login, you'll be redirected to the Tableau embed page
+
+## Customizing Users
+Edit the `users` object in `server.js` to add or change allowed users.
+
+## Customizing Tableau Embed
+Edit `tableau.html` and replace the `<iframe>` src with your own Tableau Public viz link.
+
+## Deployment
+This project is now a Node.js app and is not suitable for GitHub Pages. Deploy to platforms like Heroku, Render, or Vercel for backend support.
 
 ## Project Structure
 
